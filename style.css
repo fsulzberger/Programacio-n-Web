@@ -36,10 +36,19 @@ nav {
     border-right: none;
   }
   /* Index */
-  #munich{
-    width:80%;
-    height:70%;
+  #planifica{
+    
   }
+  #munich{
+    width:65%; 
+
+  }
+  .centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   #altstadt{
     width:80%;
     height: auto;
