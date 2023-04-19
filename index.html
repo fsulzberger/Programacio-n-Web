@@ -33,30 +33,33 @@
         <p><a href = "plan.html">
             <input type="button" value="Planifica tu viaje a Munich" >
         </a> </p>
-        <a href="https://es.wikipedia.org/wiki/Marienplatz"> <!-- link para la foto -->
-            <img src="/imagenes/munich.jpg" alt=""width=900 height="=900"> <!-- src = direccion de una foto -->
-        </a>
-        <a href="https://es.wikipedia.org/wiki/Neuschwanstein">
-            <img src="imagenes/neuschweinstein.jpeg" alt=""width=788 height=506 left=100>
-        </a>
-        <a href="https://es.wikipedia.org/wiki/Oktoberfest">
-            <img src="imagenes/oktoberfest.jpg" alt=""width=900 height=510>
-        </a>
-        <a href="https://es.wikipedia.org/wiki/R%C3%ADo_Isar">
-            <img src="imagenes/isar.jpg" alt="" width=788 height=510>
-        </a> 
-        <!-- <marquee>Hola mundo</marquee>    Texto en movimiento --> 
+        <a img id="munich" src="/munich.jpg" alt=""> </a>
+        
+        <div class="image-grid">
+            <a href="https://es.wikipedia.org/wiki/Marienplatz"> 
+                <img id="altstadt" src="/altstadt.jpg" alt=""> 
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Neuschwanstein">
+                <img id="castillo" src="imagenes/neuschweinstein.jpeg" alt="">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Oktoberfest">
+                <img id="oktober" src="imagenes/oktoberfest.jpg" alt="">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/R%C3%ADo_Isar">
+                <img id="isar" src="imagenes/isar.jpg" alt="" >
+            </a> 
+        </div>
 
      
     </main>
     <footer>
-        <div id="bottom">
+        <div id="bottom" class="contenedor-botones">
             <p>Mis redes sociales</p>
-            <a href="mailto:franisulzberger@gmail.com"><p> Email</p>  </a> 
-            <a href="https://www.instagram.com/franisulzberger/" > <p> Instagram</p>  </a> <!-- Hipervinculo -->
-            <a href="https://www.tiktok.com/@franiisulzberger?_t=8b2MHKRuF0k&_r=1">TikTok</a>
-            <a href="https://www.linkedin.com/in/francisca-sulzberger-2b5913201/"> <p> LinkedIn </p>  </a>
-            <a href="https://twitter.com/franisulzberger">Twitter</a>
+            <button type="button" id="boton"><a href="mailto:franisulzberger@gmail.com"> <img id = "mail" src= "./gmail.png" alt=""></a> </button>
+            <button type="button" id="boton"><a href="https://www.instagram.com/franisulzberger/"><img id="instagram" src="./instagram.png" alt=""> </a></button>
+            <button type="button" id="boton">  <a href="https://www.tiktok.com/@franiisulzberger?_t=8b2MHKRuF0k&_r=1"><img id = "tiktok" src= "./tik-tok.png" alt=""></a></button>
+            <button type="button" id="boton"><a href="https://www.linkedin.com/in/francisca-sulzberger-2b5913201/"><img id = "linkedin" src= "./linkedin.png" alt=""></a></button>
+            <button type="button" id="boton"><a href="https://twitter.com/franisulzberger"><img id = "twitter" src= "./twitter.png" alt=""></a></button> 
           </div>
     </footer>
 </body>
