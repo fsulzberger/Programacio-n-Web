@@ -36,9 +36,22 @@ nav {
     border-right: none;
   }
   /* Index */
-  #planifica{
-    
+  #video{
+    width: 40%;
+    height: 10%;
   }
+  .contenedor_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor_video video {
+    max-width: 100%;
+    height: auto;
+  object-fit: cover;  }
+  
+
   #munich{
     width:65%; 
 

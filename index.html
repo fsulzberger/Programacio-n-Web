@@ -33,8 +33,21 @@
         <p><a href = "plan.html">
             <input type="button" value="Planifica tu viaje a Munich" >
         </a> </p>
-       <img id="munich" src="/munich.jpg" alt="" class="centrado">
         
+        <div class="contenedor_video">
+            <video id= "video" controls autoplay>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <script>
+            var video = document.getElementById("video");
+            video.removeAttribute("controls");
+            video.muted = true;
+            video.play();
+            </script>
+
+            <img id="munich" src="/munich.jpg" alt="" class="centrado">
+      
         <div class="image-grid">
             <a href="https://es.wikipedia.org/wiki/Marienplatz"> 
                 <img id="altstadt" src="/altstadt.jpg" alt=""> 
