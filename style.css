@@ -13,15 +13,16 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
   
   li {
-    float: left;
+    display: inline-block;
   }
   
   a {
-    display: block;
-    color: white;
+    display:block;
+    color: white;   
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,27 +30,90 @@ nav {
   }
   
   a:hover {
-    color: black;
+    color:bisque;
   }
   
   li:last-child a {
     border-right: none;
   }
   /* Index */
+  #logo_foto{
+    width: 25%;
+  }
+  a[href="#inicio"] {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-align: center;
+   
+  }
+  body::-webkit-scrollbar {
+    width: 10%;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10%;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #444;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  
+  body::-webkit-scrollbar-track:hover {
+    background: #ccc;
+  }
+  
+  body::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  a[href="#inicio"]:hover {
+    background-color:brown;
+  }
+  
+  body:hover a[href="#inicio"] {
+    display: block;
+  }
+    
+  
+  
+
   #video{
-    width: 40%;
-    height: 10%;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
   }
   .contenedor_video {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50%;
+    position: relative;
+    
   }
   
   .contenedor_video video {
     max-width: 100%;
     height: auto;
-  object-fit: cover;  }
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    }
   
 
   #munich{
@@ -67,7 +131,7 @@ nav {
     height: auto;
   }
   #castillo{
-    width:80%;
+    width:90%;
     height:auto;
   }
   #oktober{
@@ -175,6 +239,9 @@ nav {
     width:50%;
     height:auto;
   }
+ 
+  
+
   #tum{
     width:50%;
     height:auto;
