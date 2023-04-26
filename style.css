@@ -36,6 +36,14 @@ nav {
   li:last-child a {
     border-right: none;
   }
+
+
+  .icono {
+    background-image: url("foto_logo.png");
+    
+  }
+  
+  
   /* Index */
   #logo_foto{
     width: 25%;
@@ -102,7 +110,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50%;
+    padding-top: 45%;
     position: relative;
     
   }
