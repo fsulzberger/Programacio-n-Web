@@ -102,7 +102,7 @@ body{background-color:white}
 
   #video{
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     
@@ -111,8 +111,8 @@ body{background-color:white}
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 45%;
-    position: relative;
+    /*padding-top: 45%;*/
+    /*position: relative;*/
     
   }
   
@@ -168,6 +168,7 @@ body{background-color:white}
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  margin-bottom: 30px;
   align-items: start;
 }
 
@@ -371,10 +372,10 @@ footer{
   height:auto;
 }
 .contenedor-botones {
-  position:relative;
+  /*position:relative;*/
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
   text-align: center;
 }
 #boton{
