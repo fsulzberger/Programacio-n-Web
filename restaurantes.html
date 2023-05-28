@@ -12,54 +12,135 @@
     <link rel="shortcut icon" href="./foto_logo.png"  type="image/x-icon">
 </head>
 <body>
+  <div class="barra">
   <header id="inicio">
     <a href="#inicio" id="btn-top">↑</a>
-    <img id="logo_foto" src="logo_largo.png" alt="" class="centrado"> 
-  </header>
-    <main>
-      <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cultura.html">Cultura</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="atracciones.html">Atracciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="alpes.html">Alpes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="restaurantes.html">Restaurantes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="transporte.html">Transporte</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="experiencia.html">Experiencia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#bottom">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <img id="logo_foto" src="logo_largo.png" onclick="window.location.href='index.html'" alt="" class="centrado"> 
+</header>
+<main>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cultura.html">Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atracciones.html">Atracciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alpes.html">Alpes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transporte.html">Transporte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experiencia.html">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bottom">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav> 
-        <h1 style="text-align:center;">Restaurantes - ¿Donde comer comida tipica de Munich?</h1>
-        <h2>Proba la comida bavara en los mejores lugares</h2>
-        <img id= "hb" src="hb.jpg" alt="" > 
-        <img id= "hofbraeu" src="hofbraeu.jpeg" alt="" > 
+      </div>
+    </nav> 
+   
+    
+      <h1 style="text-align:center;">Restaurantes - ¿Donde comer comida tipica de Munich?</h1>
+     
+      <div class="texto">
+        <h2>Proba la comida bavara en los mejores lugares de la ciudad </h2>
+        <p>Conoce los mejores lugares para comer en Munich vivi la experiencia bavara probando los restaurantes y sus comidas tradicionales.</p>
+        <p>Hace click en el lugar que mas te guste para conocer más y reservar tu mesa.</p>
+  </div>
+
+
+        <section id="carousel">
+          <div class="contenido">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span></span></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"><span></span></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"><span></span></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"><span></span></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"><span></span></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carusel-contenedor">
+                    <h1>HOFBÄUHAUS</h1>
+                    <p>Desde 1589 es el lugar perfecto para disfrutar de auténtica cerveza alemana y sumergirse en la vibrante tradición y ambiente festivo de la ciudad.
+                    <a href="https://www.hofbraeu-muenchen.de/es">
+                      <button>Conoce mas</button>
+                    </p>
+                  </a>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carusel-contenedor">
+                    <h1>AGUSTINER</h1>
+                    <p>La cervecería más antigua de la ciudad fundada en 1328, te invita a sumergirte en la historia mientras disfrutas de su cerveza artesanal de renombre y su ambiente tradicional bávaro, creando una experiencia única que no querrás perderte.
+                  <a href="https://www.augustinerkeller.de/es">
+                    <button>Conoce mas</button>
+                  </p>
+                  </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carusel-contenedor">
+                    <h1>WEISSES BRÄHAUS</h1>
+                    <p>Es reconocido por su deliciosa cerveza de trigo, ofreciendo a los visitantes una experiencia refrescante y auténtica en un entorno acogedor y lleno de tradición, que te transportará al corazón de la cultura cervecera bávara en cada sorbo.
+                    <a href="https://www.schneider-brauhaus.de/de">
+                      <button>Conoce mas</button>
+                    </p>
+                  </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carusel-contenedor">
+                    <h1>RATSKELLER</h1>
+                    <p>Ubicado en el sótano del Ayuntamiento histórico, te invita a descubrir un mundo subterráneo lleno de encanto y exquisiteces culinarias, donde podrás deleitarte con platos tradicionales, una amplia selección de vinos y cervezas, todo ello en un entorno único y fascinante que te transportará a través de siglos de historia.
+                    <a href="https://www.ratskeller.com/">
+                      <button>Conoce mas</button>
+                    </p>
+                    </a> 
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carusel-contenedor">
+                    <h1>BIERGARTEN</h1>
+                    <p>Los Biergarten ofrecen tranquilidad en medio de la naturaleza, donde podrás relajarte y disfrutar de una auténtica cerveza alemana al aire libre, rodeado de hermosos paisajes y un ambiente animado que te invita a socializar y disfrutar.
+                    <a href="https://www.chinaturm.de/">
+                      <button>Conoce mas</button>
+                    </p> 
+                  </a>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
       <div id="bottom" class="contenedor-botones">
@@ -71,6 +152,7 @@
         <button type="button" id="boton"><a href="https://twitter.com/franisulzberger"><img id = "twitter" src= "./twitter.png" alt=""></a></button> 
       </div>
   </footer>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
 integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

@@ -12,18 +12,20 @@
     <link rel="shortcut icon" href="./foto_logo.png"  type="image/x-icon">
 </head>
 <body>
+  <div class="barra">
   <header id="inicio">
     <a href="#inicio" id="btn-top">↑</a>
-    <img id="logo_foto" src="logo_largo.png" alt="" class="centrado"> 
-  </header>
-    <main> <nav class="navbar navbar-expand-lg" id="navbar">
+    <img id="logo_foto" src="logo_largo.png" onclick="window.location.href='index.html'" alt="" class="centrado"> 
+</header>
+<main>
+  <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -55,7 +57,7 @@
         </div>
       </div>
     </nav> 
-
+   
     </main>
         <h1 style="text-align:center;">Viajar a los Alpes</h1>
         <h2>¿Como y cuando viajar a los alpes desde Munich?</h2>
@@ -74,6 +76,7 @@
         <button type="button" id="boton"><a href="https://twitter.com/franisulzberger"><img id = "twitter" src= "./twitter.png" alt=""></a></button> 
       </div>
   </footer>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
 integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

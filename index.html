@@ -12,10 +12,12 @@
 
 </head>
 <body>
+  <div class="barra">
     <header id="inicio">
         <a href="#inicio" id="btn-top">↑</a>
-        <img id="logo_foto" src="logo_largo.png" alt="" class="centrado"> 
+        <img id="logo_foto" src="logo_largo.png" onclick="window.location.href='index.html'" alt="" class="centrado"> 
     </header>
+    
     <main>
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
@@ -56,13 +58,7 @@
               </div>
             </div>
           </nav> 
-
-      
-    
-        <p><a href = "plan.html">
-            <input type="button" value="Planifica tu viaje a Munich" >
-        </a> </p>
-          
+         
         <div class="contenedor_video">
             <video id= "video" controls autoplay>
                 <source src="video.mp4" type="video/mp4">
@@ -77,7 +73,8 @@
 
         
         
-        
+        <div class="intro">
+          <div class="texto">
         <p>
             <h1 style="text-align:center;">Conoce todo sobre Munich</h1>
             <h2>Primera parada obligatoria: Marienplatz</h2>
@@ -98,26 +95,92 @@
             <p style="font-size:20px;">En resumen, Marienplatz es una visita
             obligada si estás en Munich, tanto por su belleza como por su importancia histórica y cultural.
             </p>
-
-            <img id="munich" src="/munich.jpg" alt="" class="centrado"></p>
-      
-        <div class="image-grid">
-            <a href="https://es.wikipedia.org/wiki/Marienplatz"> 
-                <img id="altstadt" src="/altstadt.jpg" alt=""> 
-            </a>
-            <a href="https://es.wikipedia.org/wiki/Neuschwanstein">
-                <img id="castillo" src="imagenes/neuschweinstein.jpeg" alt="">
-            </a>
-            <a href="https://es.wikipedia.org/wiki/Oktoberfest">
-                <img id="oktober" src="imagenes/oktoberfest.jpg" alt="">
-            </a>
-            <a href="https://es.wikipedia.org/wiki/R%C3%ADo_Isar">
-                <img id="isar" src="imagenes/isar.jpg" alt="" >
-            </a> 
+          </div>
         </div>
 
+  
+
+            <img id="munich" src="/munich.jpg" alt="" class="centrado"></p>
+        <div class="intro">
+          <div class="texto">
+        <p>
+
+
+            <h2 style="text-align:center;">Hace click en las fotos y conoce más</h2>
+          </div>
+        </div>
+       
+
+        <div class="card-container">
+          <div class="card">
+            <a href="https://de.wikipedia.org/wiki/Altstadt_(M%C3%BCnchen)">
+              <img id="altstadt" src="/altstadt.jpg" alt="">
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Neuschwanstein">
+              <img id="castillo" src="imagenes/neuschweinstein.jpeg" alt="">
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Oktoberfest">
+              <img id="oktober" src="imagenes/oktoberfest.jpg" alt="">
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://es.wikipedia.org/wiki/R%C3%ADo_Isar">
+              <img id="isar" src="imagenes/isar.jpg" alt="" >
+            </a>
+          </div>
+        </div>
+        
+        
+
+        <div class="historia">   
+          <a href="historia.html">
+            <p> HISTORIA</p>
+          </a>
+      </div>
+      
+      <div class="cultura">   
+        <a href="cultura.html">
+          <p> CULTURA</p>
+        </a>
+    </div>
+
+    <div class="atracciones">   
+      <a href="atracciones.html">
+        <p> ATRACCIONES</p>
+      </a>
+  </div>
+
+  <div class="alpes">   
+    <a href="alpes.html">
+      <p> ALPES</p>
+    </a>
+</div>
+
+<div class="restaurantes">   
+  <a href="restaurantes.html">
+    <p> RESTAURANTES</p>
+  </a>
+</div>
+
+<div class="transporte">   
+  <a href="transporte.html">
+    <p> TRANSPORTE</p>
+  </a>
+</div>
+
+<div class="experiencia">   
+  <a href="experiencia.html">
+    <p> EXPERIENCIA</p>
+  </a>
+</div>
 
     </main>
+ 
+
     <footer>
         <div id="bottom" class="contenedor-botones">
             <h3>Mis redes sociales</h3>
@@ -128,6 +191,8 @@
             <button type="button" id="boton"><a href="https://twitter.com/franisulzberger"><img id = "twitter" src= "./twitter.png" alt=""></a></button> 
           </div>
     </footer>
+  </div>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
 integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

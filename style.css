@@ -97,12 +97,15 @@ body{background-color:white}
     display: block;
   }
     
-  
+  .barra {
+    overflow-y: scroll;
+    height: 100vh;
+    padding-right: 20px; 
+  }
   
 
   #video{
     width: 100%;
-    /*position: absolute;*/
     top: 0;
     left: 0;
     
@@ -111,8 +114,7 @@ body{background-color:white}
     display: flex;
     justify-content: center;
     align-items: center;
-    /*padding-top: 45%;*/
-    /*position: relative;*/
+   
     
   }
   
@@ -152,23 +154,210 @@ body{background-color:white}
     height:auto;
   }
 
-  .image-grid {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-container {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    gap: 10px;
+    max-width: 8000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
   }
   
-  .image-grid img {
+  .card {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
     width: 100%;
-    height: auto;
-  
+    height: 100%;
+    object-fit: cover;
   }
+  
+  
+
+  
+ 
+
+  .historia{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(history.jpeg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.historia a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+
+
+.cultura{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(cultura.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.cultura a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+.atracciones{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(atracciones.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.atracciones a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+.alpes{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(alpes.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.alpes a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+.restaurantes{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(restaurantes.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.restaurantes a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+.transporte{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(transporte.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.transporte a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+.experiencia{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(experiencia.jpeg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.experiencia a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px; 
+  align-content: center;
+}
+
+
+
 /* Historia */
+.intro{
+  display: grid;
+  margin-left: 40px;
+  margin-right: 50px;
+  text-align: justify;
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  text-align: justify;
   align-items: start;
 }
 
@@ -177,14 +366,35 @@ body{background-color:white}
 }
 
 .texto {
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
+  font-family: UniversLTStd, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.666;
+  -webkit-font-smoothing: antialiased;
+  color: #2D2D28;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  margin-bottom: 60px;
+  align-content: center;
 }
 
+
+
 .texto h2 {
-  font-size: 24px;
+  font-family: UniversLTStd, Arial, sans-serif;
   margin-bottom: 10px;
+  font-weight: bold;
+  display: block;
+  font-size: 1.1em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .texto p {
@@ -223,6 +433,8 @@ body{background-color:white}
     height:auto;
   }
 
+
+
 /* Atracciones */
 
   #residenz{
@@ -258,11 +470,11 @@ body{background-color:white}
     height:auto;
   }
   #sommer{
-    width:50%;
+    width:30%;
     height:auto;
   }
   #see{
-    width:50%;
+    width:40%;
     height:auto;
   }
 
@@ -342,7 +554,66 @@ body{background-color:white}
     width:50%;
     height:auto;
   }
-
+  .carousel-indicators [data-bs-target]{
+    position: relative;
+    width: 80px;
+    height: 6px;
+    border: none;
+    border-radius: 10px;
+  }
+  .carousel-indicators [data-bs-target] span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ae1c28;
+    border-radius: inherit;
+  }
+  .carousel-item{
+    height: 75vh;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  .carusel-contenedor{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    padding-bottom: 20px;
+  }
+  #carousel p{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color:whitesmoke
+  }
+  #carousel h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .carousel-item:nth-child(1){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(hofbraeu.jpeg)
+  }
+  .carousel-item:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(agustiner.jpeg)
+  }
+  .carousel-item:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(weisses.jpeg)
+  }
+  .carousel-item:nth-child(4){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ratskeller.jpeg)
+  }
+  .carousel-item:nth-child(5){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(biergarten.jpeg)
+  }
+  
 
 
 /* Footer */
@@ -372,10 +643,7 @@ footer{
   height:auto;
 }
 .contenedor-botones {
-  /*position:relative;*/
   bottom: 0;
-  /*left: 50%;*/
-  /*transform: translateX(-50%);*/
   text-align: center;
 }
 #boton{
