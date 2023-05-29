@@ -59,17 +59,22 @@
             </div>
           </nav> 
          
-        <div class="contenedor_video">
-            <video id= "video" controls autoplay>
-                <source src="video.mp4" type="video/mp4">
+          <div class="contenedor_video">
+            <video id="video" autoplay loop>
+              <source src="video.mp4" type="video/mp4">
             </video>
-        </div>
-        <script>
+          </div>
+          
+          <script>
             var video = document.getElementById("video");
-            video.removeAttribute("controls");
             video.muted = true;
-            video.play();
-            </script>
+          
+            video.addEventListener("ended", function() {
+              video.currentTime = 0;
+              video.play();
+            });
+          </script>
+          
 
         
         
@@ -182,8 +187,7 @@
  
 
     <footer>
-        <div id="bottom" class="contenedor-botones">
-            <h3>Mis redes sociales</h3>
+        <div id="bottom" class="contenedor-botones"> 
             <button type="button" id="boton"><a href="mailto:franisulzberger@gmail.com"> <img id = "mail" src= "./gmail.png" alt=""></a> </button>
             <button type="button" id="boton"><a href="https://www.instagram.com/franisulzberger/"><img id="instagram" src="./instagram.png" alt=""> </a></button>
             <button type="button" id="boton">  <a href="https://www.tiktok.com/@franiisulzberger?_t=8b2MHKRuF0k&_r=1"><img id = "tiktok" src= "./tik-tok.png" alt=""></a></button>

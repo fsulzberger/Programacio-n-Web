@@ -17,7 +17,8 @@
     <a href="#inicio" id="btn-top">↑</a>
     <img id="logo_foto" src="logo_largo.png" onclick="window.location.href='index.html'" alt="" class="centrado"> 
 </header>
-<main>
+
+<main> 
   <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
@@ -57,18 +58,81 @@
         </div>
       </div>
     </nav> 
+
+    <div class="contenedor_video">
+      <video id="video" autoplay loop>
+        <source src="alpes.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <script>
+      var video = document.getElementById("video");
+      video.muted = true;
+    
+      video.addEventListener("ended", function() {
+        video.currentTime = 0;
+        video.play();
+      });
+    </script>
+    
+
+
+  
+  
+    <div class="card_alps">
+      <img id="wallberg" src="Wallber.jpg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.munich.travel/en/pois/lakes-mountains/lake-tegernsee"><h3 style="color: black; font-weight: bold;"> Wallberg</h3></a>
+        <p>Es una montaña de 1722 metros de altura ofrece vistas panorámicas impresionantes. En invierno, el Wallberg se convierte en un lugar para practicar deportes de invierno como el esquí y el snowboard. </p>
+      </div>
+    </div>
+
+    <div class="card_alps">
+      <img id="alps" src="berchtesgaden.jpg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.munich.travel/en/pois/lakes-mountains/kehlsteinhaus"><h3 style="color: black; font-weight: bold;"> Berchtesgaden</h3></a>
+        <p>En la cima, 1.834 metros de alto, se encuentra Kehlsteinhaus o en español Nido del Águila, que solía ser la casa de te de Hitler, ya que fue construida para el. Es conocido por su belleza natural y su rica historia. Se puede acceder caminando o en bus.</p>
+      </div>
+    </div>
+    
+    <div class="card_alps">
+      <img id="alpes" src="konigssee.jpg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.munich.travel/en/pois/lakes-mountains/koenigssee"><h3 style="color: black; font-weight: bold;">Königssee</h3></a>
+        <p>Es es un hermoso lago alpino ubicado en el Parque Nacional de Berchtesgaden. Con sus aguas cristalinas rodeadas de altas montañas, el Königssee es considerado uno de los lagos más impresionantes de Europa. Los visitantes pueden disfrutar de paseos en bote por el lago, explorar y maravillarse.</p>
+      </div>
+    </div>
+
+
+    <div class="card_alps">
+      <img id="alpes" src="neuschwanstein.jpg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.munich.travel/en/topics/lakes-mountains/royal-wanderlust"><h3 style="color: black; font-weight: bold;">Castillo de Neuschwanstein</h3></a>
+        <p>Es uno de los castillos más famosos y emblemáticos del mundo. Es conocido por su arquitectura y su apariencia de cuento de hadas, que ha servido de inspiración para el castillo de la Bella Durmiente de Disney.</p>
+      </div>
+    </div>
+    
+    <div class="card_alps">
+      <img id="alpes" src="alpes.jpg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.tegernsee.com/en/a-tourist-information-rottach-egern"><h3 style="color: black; font-weight: bold;">Rottach-Egern </h3></a>
+        <p>Es un encantador pueblo bávaro en el lago Tegernsee, rodeado de montañas y bosques. Ofrece actividades al aire libre, comida tradicional y una auténtica experiencia cultural en un entorno natural impresionante.</p>
+      </div>
+    </div>
+
+    <div class="card_alps">
+      <img id="alpesverano" src="alpesverano.jpeg" alt="">
+      <div class="card_alps-content">
+        <a href="https://www.munich.travel/en/pois/lakes-mountains/watzmann"><h3 style="color: black; font-weight: bold;">Watzmann</h3></a>
+        <p>Es una imponente montaña de los Alpes bávaros, cerca de Berchtesgaden, Alemania. Atrae a escaladores y excursionistas de todo el mundo. Ofrece vistas panorámicas espectaculares y desafiantes rutas de senderismo.</p>
+      </div>
+    </div>
+
    
-    </main>
-        <h1 style="text-align:center;">Viajar a los Alpes</h1>
-        <h2>¿Como y cuando viajar a los alpes desde Munich?</h2>
-        <img id= "alps" src="alps.jpg" alt="" >
-        <img id= "wallberg" src="Wallber.jpg" alt="" > 
-        <img id= "alpes" src="alpes.jpg" alt="" > 
-        <img id= "alpesverano" src="alpesverano.jpeg" alt=""> 
+    
     </main>
     <footer>
       <div id="bottom" class="contenedor-botones">
-        <h3>Mis redes sociales</h3>
         <button type="button" id="boton"><a href="mailto:franisulzberger@gmail.com"> <img id = "mail" src= "./gmail.png" alt=""></a> </button>
         <button type="button" id="boton"><a href="https://www.instagram.com/franisulzberger/"><img id="instagram" src="./instagram.png" alt=""> </a></button>
         <button type="button" id="boton">  <a href="https://www.tiktok.com/@franiisulzberger?_t=8b2MHKRuF0k&_r=1"><img id = "tiktok" src= "./tik-tok.png" alt=""></a></button>
