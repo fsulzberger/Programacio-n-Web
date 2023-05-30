@@ -1,26 +1,63 @@
-// function name(params){}
 
-// function nombre (parametros){}
+let array1=[1,2,3]
+console.log(array1)
+console.log(array1[0])
 
+//metodos de array
+//POP: Elimina el ulimo elemento
+
+array1.pop()
+console.log(array1) //[1,2]
+
+//PUSH: le agrego un elemento al array
+array1.push(3.14)
+console.log(array1) //[1,2,3.14]
+
+//SHIFT: Elimina el primer elemento del array
+//UNSHIFT: agrega un elemento al principio del array
+
+//tipo de dato undefined: el valor no fue definido
+
+//Map: crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos
+
+
+//Reduce: funcion reductora
+
+//indexOf
+console.log(array1.indexOf(3.14));
+
+//reverse: da vuelta el array --> OJO! Luego del reverse, el array original deja de funcionar
+
+//-------------------------------//
+
+let perro={
+    nombre:"Scott",
+    color:"Cafe",
+    edad:5,
+}
+
+console.log(perro.nombre)  // las propiedades llevan parentesis antes, los métodos no!!!
+
+let userStr={}
+
+//funciones declaradas o funciones expresadas
+
+/*function name(params){
+}*/
 function sumar(){
     console.log(1+2)
 }
 
-function sumar_con_parametros(a,b){
-    console.log(a+b)
-}
-sumar_con_parametros
+//invocada
+sumar()
 
-
-// el console.log no devuelve el dato
-function saludar_con_parametros(nombre){
-    return("Hola "+ nombre)
+function saludar(nombre){
+    console.log("Hola"+ nombre)
 }
 
-saludar_con_parametros("Esteban")
+saludar("Francisca")
 
-function consologear(unResultado){
-    console.log(unResultado)
+//
+function  saludar_con_parametros(nombre){
+    return ("Hola"+ nombre)
 }
-
-consologear(saludar_con_parametros("Esteban"))
