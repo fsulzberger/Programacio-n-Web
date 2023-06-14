@@ -6,7 +6,10 @@ body{background-color:white}
 #navbar {
     background-color: #333;
     overflow: hidden;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   
   html {
@@ -48,7 +51,22 @@ body{background-color:white}
     background-image: url("foto_logo.png");
     
   }
+  #foto_carrito {
+    width: 5%;
+    position: relative;
+  }
   
+  @media (max-width: 768px) { 
+    #navbar {
+      flex-direction: column;
+    }
+  
+    #foto_carrito {
+      width: 100%;
+      position: static;
+      margin-top: 10px; 
+    }
+  }
   
   /* Index */
   #logo_foto{
