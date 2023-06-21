@@ -53,6 +53,7 @@ const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonFinalizar = document.querySelector('#boton-finalizar');
 const DOMbotonSeguirComprando = document.querySelector('#boton-seguir-comprando');
 
+
 DOMbotonSeguirComprando.addEventListener('click', function() {
   window.location.href = 'carrito.html'; 
 });

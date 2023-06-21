@@ -11,6 +11,10 @@ body{background-color:white}
     align-items: center;
     position: relative;
   }
+
+  .navbar-brand {
+    display: none;
+  }
   
   html {
     scroll-behavior: smooth;
@@ -64,9 +68,9 @@ body{background-color:white}
     #foto_carrito {
       width: 100%;
       position: static;
-      margin-top: 10px; 
     }
   }
+
   
   /* Index */
   #logo_foto{
